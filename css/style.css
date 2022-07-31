@@ -1,0 +1,28 @@
+
+
+.header{
+    text-align: center;
+}
+
+.jokes_container{
+    margin: 5% 0;
+    
+}
+
+.joke{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10%;
+    background-color: black;
+    text-align: center;
+    transition: .3s;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, .2) ;
+}
+.text{
+    color: aliceblue;
+
+}
+
+.joke:hover{
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, .5) ;
+}
