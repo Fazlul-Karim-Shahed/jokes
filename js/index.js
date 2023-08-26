@@ -1,16 +1,11 @@
 
+console.log("Helloooooo")
+
 document.getElementById('btn').addEventListener('click', () => {
 
-    let xhr = new XMLHttpRequest()
-    xhr.open('GET', 'http://api.icndb.com/jokes/random', true)
-    xhr.onload = function(){
-        if(this.status === 200){
-            data = this.response
-            data = JSON.parse(data)
-            document.getElementsByClassName('text')[0].innerHTML = data.value.joke
-            console.log(data.value.joke)
-        }
-    }
-    xhr.send()
+    fetch("https://v2.jokeapi.dev/joke/Any").then(res => res.json().then(data => {
+        document.getElementsByClassName('text1')[0].innerHTML = data.setup
+        document.getElementsByClassName('text2')[0].textContent = "-" + data.delivery
+    }))
 
 })

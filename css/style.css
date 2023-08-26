@@ -18,7 +18,7 @@
     transition: .3s;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, .2) ;
 }
-.text{
+.text1, .text2{
     color: aliceblue;
 
 }
